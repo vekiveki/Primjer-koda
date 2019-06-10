@@ -1,0 +1,243 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav a {
+    background: transparent;
+    text-decoration: none;
+    display: block;
+    padding: 30px 20px 20px 20px;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+@keyframes pulse {
+    25% {
+        filter: blur(2px);
+    }
+    75% {
+        filter: blur(0px);
+    }
+}
+
+@-webkit-keyframes pulse {
+    25% {
+        filter: blur(2px);
+    }
+    75% {
+        filter: blur(0px);
+    }
+}
+
+nav li:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+nav ul {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.fitness-img {
+    width: 100%;
+    border-radius: 130px;
+    padding-bottom: 10px;
+}
+
+.gumbek {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px;
+    width: 20px;
+    opacity: 0.5;
+}
+
+.paket-1 {
+    height: 100vh;
+    background-image: url(../img/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.cap1 {
+    letter-spacing: 2px;
+}
+
+.cap2 {
+    font-weight: 200;
+    font-size: 0.6em;
+    letter-spacing: -1px;
+    color: #f9b94a;
+}
+
+.paket-3 {
+    height: 90vh;
+    background-image: url(../img/cover2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.paket-5 {
+    height: 80vh;
+    background-image: url(../img/zadnja-pozadina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paket-5 p {
+    max-width: calc(1em * 30);
+    background-color: gray;
+    padding: 30px;
+    margin: 0 auto;
+    font-family: "Raleway";
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.about-content {
+    padding-top: 70px;
+}
+
+.paket-6 {
+    height: 50vh;
+}
+
+.order {
+    background-image: url(../img/arrows-down.png);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+
+footer p {
+    font-family: "Raleway", sans-serif;
+    color: silver;
+    background-color: black;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 3.5%;
+    margin: 6%;
+    font-family: "Raleway";
+}
+
+.behind {
+    position: relative;
+    background-color: yellow;
+    opacity: 0.6;
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 150px;
+    /*background: linear-gradient(to right, skyblue 50%, yellow 50%);*/
+}
+
+.behind p {
+    font-family: "Raleway";
+    font-size: 2em;
+    padding: 20px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.paket-6 p {
+    font-family: "Raleway";
+    max-width: calc(1em * 30);
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+input {
+    padding: 5px;
+}
+
+.adress {
+    margin-top: 10px;
+}
+
+.icon-container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 200px;
+}
+
+.order-content {
+    transform: translateY(30%);
+}
